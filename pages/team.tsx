@@ -9,7 +9,7 @@ export default function Team() {
         <div className='relative w-full min-h-screen overflow-hidden bg-black'>
             <Head>
                 <title>RUKI Team</title>
-                <meta name="description" content="What we're made of" />
+                <meta name="description" content="What we are made of" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
