@@ -7,10 +7,17 @@ import { RiFlutterFill } from 'react-icons/ri'
 import { SiJavascript, SiSwift } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { IoLogoAndroid, IoLogoJavascript } from 'react-icons/io'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <div className='relative w-full min-h-screen overflow-hidden bg-black'>
+      <Head>
+        <title>RUKI Home</title>
+        <meta name="description" content="Always Growing" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Navbar />
       <div className='w-full h-full'>
         <div className='w-full flex items-center flex-col'>
