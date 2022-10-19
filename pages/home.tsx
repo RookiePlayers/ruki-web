@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import { FaUnity, FaJava, FaReact } from 'react-icons/fa'
 import { RiFlutterFill } from 'react-icons/ri'
 import { SiJavascript, SiSwift } from 'react-icons/si'
@@ -12,7 +13,7 @@ export default function Home() {
     <div className='relative w-full min-h-screen overflow-hidden bg-black'>
       <Navbar />
       <div className='w-full h-full'>
-        <div className='w-full h-[200vh] flex items-center flex-col'>
+        <div className='w-full flex items-center flex-col'>
           <section className='w-full h-full flex flex-row max-w-7xl'>
             <div className='w-[50%] h-screen flex flex-col items-center justify-center'>
               <div className='w-[100%]'>
@@ -24,7 +25,7 @@ export default function Home() {
                 <div className='font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-rukipurple via-rukiblue to-rukiblue text-[60px] leading-[1.1]'>
                   Web & Mobile Applications
                 </div>
-                <div className='font-bold text-white text-xl mt-[5%]'>
+                <div className='font-bold text-neutral-200 text-xl mt-[5%]'>
                   Software Design & Development
                 </div>
                 <div className='mt-[6%]'>
@@ -46,9 +47,11 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='mb-[25%] w-screen bg-white/[0.1] translate-y-[-20%]'>
+          <section className='w-screen bg-white/[1] translate-y-[-20%]'>
             <div className='w-full flex justify-center relative h-[350px]'>
-              <div className='absolute bg-white/70 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[14]' />
+
+              <div className='absolute bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[14]' />
+
               <div className='w-full h-full flex justify-center'>
                 <div className='w-[500px] h-[300px] bg-gradient-to-tr from-rukipurple to-rukiblue rounded-full mr-[10%]' />
                 <div className='w-[300px] h-[200px] bg-gradient-to-tr from-rukipurple to-rukipurple rounded-full' />
@@ -87,8 +90,31 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
 
+          <section className='w-full h-[40vh] flex flex-row max-w-7xl my-[5%]'>
+            <div className='w-[50%] h-full flex flex-row items-center justify-center'>
+              <div className='w-[200px] mr-[80px]'>
+                <img src="/assets/images/logov2_white.png" alt="..." className='z-[15] object-cover' />
+              </div>
+              <div className='w-[1px] h-[80%] bg-white/20 mr-[80px]'></div>
+              <div>
+                <div className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rukipurple via-rukiblue to-rukiblue text-[60px]'>
+                  Always
+                </div>
+                <div className='font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-rukipurple via-rukiblue to-rukiblue text-[60px]'>
+                  Growing
+                </div>
+              </div>
+
+            </div>
+            <div className='w-[50%] h-full relative flex items-center justify-center'>
+              <div className='font-semibold text-neutral-200 text-xl mt-[5%] w-[80%]'>
+                At Ruki, we prioritize both innovation and user experience. Ruki is primarily a development company, offering slick, high-fidelity websites and applications, imaginative and immersive games, and stunning contemporary visuals.
+              </div>
+            </div>
+          </section>
+          <Footer />
+        </div>
       </div>
     </div>
   )
