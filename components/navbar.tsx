@@ -64,27 +64,20 @@ export default function Navbar() {
                     </div>
                   </li>
                 </Link>
-                <Link href="/team">
-                  <li className='group cursor-pointer w-[120px] h-full hover:opacity-100 opacity-80  hover:text-spacepink active:text-white text-base font-normal select-none flex justify-center items-center'>
-                    <div className='px-8 py-3 rounded-md group-hover:bg-neutral-900 font-bold group-hover:outline group-hover:outline-1 group-hover:outline-neutral-700 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-tr group-hover:from-rukipurple group-hover:via-rukiblue group-hover:to-rukiblue'>
-                      Contact
-                    </div>
-                  </li>
-                </Link>
               </ul>
             </div>
-            {/* <div className='hidden ml-auto h-full md:flex items-center flex-row'>
+            <div className='hidden ml-auto h-full md:flex items-center flex-row'>
               <div className='h-full flex items-center justify-center'>
-                <a href="mailto:vainqueurkk@gmail.com" className='flex flex-row gap-4 items-center justify-center'>
-                  <div className='font-bold text-neutral-100 text-sm'>
-                    Contact Us
+                <Link href="/contact">
+                  <div className='w-[165px] outline outline-1 outline-neutral-700 cursor-pointer transition-all duration-[250ms] hover:animate-none font-bold bg-black hover:brightness-150 hover:scale-[1.05] px-7 py-3 rounded-lg text-[18px] select-none'>
+                    <div className='w-full h-full flex items-center justify-center text-transparent bg-clip-text bg-gradient-to-tr from-rukipurple via-rukiblue to-rukiblue'>
+                      Get In Touch
+                    </div>
                   </div>
-                  <MdEmail className='cursor-pointer w-8 h-8 text-neutral-100 hover:opacity-100 opacity-80 hover:text-spacepink active:text-spacepurple text-base font-medium select-none'>
-
-                  </MdEmail>
-                </a>
+                </Link>
               </div>
-            </div> */}
+            </div>
+
             <div onClick={handleNavMenu} className='md:hidden ml-auto flex items-center justify-center'>
               <GiHamburgerMenu className='w-[25px] h-[25px] text-white hover:scale-110 cursor-pointer' />
             </div>

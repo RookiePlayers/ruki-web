@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className='w-[50%] h-screen relative flex items-center justify-center'>
 
-              <img src="/assets/images/devices.png" alt="..." className='absolute z-[15] object-cover scale-[1.4]' />
+              <img src="/assets/images/devices.png" alt="..." className='absolute z-[15] object-cover scale-[1.6]' />
 
 
               <div className='absolute bg-black/60 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-[60%] z-[14]'></div>
