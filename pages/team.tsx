@@ -43,14 +43,14 @@ export default function Team() {
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
                                             <div className="w-full font-normal text-neutral-700 text-md">
-                                                I'm Ollie, the creator of RUKI. I am a driven individual who never hesitates to take on difficulties.
+                                                {"I'm Ollie, the creator of RUKI. I am a driven individual who never hesitates to take on difficulties."}
                                             </div>
                                         </div>
                                         <div className=" flex flex-col space-y-4 w-full items-center translate-y-[50px]">
                                             <div className="h-[1px] w-full bg-neutral-300">
 
                                             </div>
-                                            <a target="_blank" href="/https://www.linkedin.com/in/olamide-ogunlade-080816187/">
+                                            <a target="_blank" rel="noreferrer" href="/https://www.linkedin.com/in/olamide-ogunlade-080816187/">
                                                 <div className="font-bold text-neutral-700 text-md flex flex-row items-center hover:scale-[1.1] group hover:text-rukipurple cursor-pointer duration-[400ms]">
                                                     <FaLinkedin className="mr-1 h-[22px] w-[22px] text-[#0274b3]" />
                                                     LinkedIn
@@ -80,7 +80,7 @@ export default function Team() {
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
                                             <div className="w-full font-normal text-neutral-700 text-md">
-                                                Hey, I'm Gabriele, and I helped found RUKI. I am a tenacious individual who delights in trying new things and developing new abilities.
+                                                {"Hey, I'm Gabriele, and I helped found RUKI. I am a tenacious individual who delights in trying new things and developing new abilities."}
                                             </div>
 
                                         </div>
@@ -88,7 +88,7 @@ export default function Team() {
                                             <div className="h-[1px] w-full bg-neutral-300">
 
                                             </div>
-                                            <a target="_blank" href="https://www.linkedin.com/in/gabriele-akintunde-247b58173/">
+                                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gabriele-akintunde-247b58173/">
                                                 <div className="font-bold text-neutral-700 text-md flex flex-row items-center hover:scale-[1.1] group hover:text-rukipurple cursor-pointer duration-[400ms]">
                                                     <FaLinkedin className="mr-1 h-[22px] w-[22px] text-[#0274b3]" />
                                                     LinkedIn
@@ -117,7 +117,7 @@ export default function Team() {
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
                                             <div className="w-full font-normal text-neutral-700 text-md">
-                                                I'm a vainqueur, one of RUKI's founders, and a deeply passionate person. Additionally, I've delivered pixel-perfect software experiences in fast-paced industries.
+                                                {"I'm a vainqueur, one of RUKI's founders, and a deeply passionate person. Additionally, I've delivered pixel-perfect software experiences in fast-paced industries."}
                                             </div>
 
                                         </div>
@@ -125,7 +125,7 @@ export default function Team() {
                                             <div className="h-[1px] w-full bg-neutral-300">
 
                                             </div>
-                                            <a target="_blank" href="www.linkedin.com/in/vainqueur">
+                                            <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/vainqueur">
                                                 <div className="font-bold text-neutral-700 text-md flex flex-row items-center hover:scale-[1.1] group hover:text-rukipurple cursor-pointer duration-[400ms]">
                                                     <FaLinkedin className="mr-1 h-[22px] w-[22px] text-[#0274b3]" />
                                                     LinkedIn
