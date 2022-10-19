@@ -39,7 +39,6 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-
       </div>
       <div className='fixed z-[999] top-0 left-0 right-0 flex justify-center bg-black/60 bg-clip-padding backdrop-filter backdrop-blur-lg flex-col'>
         <div className=' h-[90px] w-full flex justify-center'>
