@@ -117,7 +117,7 @@ export default function Team() {
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
                                             <div className="w-full font-semibold text-neutral-900 text-md">
-                                                {"I'm a vainqueur, one of RUKI's founders, and a deeply passionate person. Additionally, I've delivered pixel-perfect software experiences in fast-paced industries."}
+                                                {"I'm a Vainqueur, one of RUKI's founders, and a deeply passionate person. Additionally, I've delivered pixel-perfect software experiences in fast-paced industries."}
                                             </div>
 
                                         </div>
