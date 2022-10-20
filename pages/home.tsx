@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='w-screen bg-white/[1] translate-y-[-20%]'>
+          <section className='w-screen bg-white/[1]'>
             <div className='w-full flex justify-center relative h-[350px]'>
 
               <div className='absolute bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[14]' />
