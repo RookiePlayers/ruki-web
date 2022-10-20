@@ -34,7 +34,7 @@ export default function Team() {
                                     </div>
                                     <div className="w-full flex flex-col items-center space-y-4 px-6 ">
                                         <div className=" flex flex-col space-y-2 items-center">
-                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-rukipurple via-rukipurple to-rukiblue text-2xl mt-6">
+                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-l from-rukipurple via-rukipurple to-rukiblue text-2xl mt-6">
                                                 Olamide Ogunlade
                                             </div>
                                             <div className="font-semibold text-neutral-500 text-[12px] ">
@@ -42,7 +42,7 @@ export default function Team() {
                                             </div>
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
-                                            <div className="w-full font-normal text-neutral-700 text-md">
+                                            <div className="w-full font-semibold text-neutral-900 text-md">
                                                 {"I'm Ollie, the creator of RUKI. I am a driven individual who never hesitates to take on difficulties."}
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ export default function Team() {
                                     <div className="rounded-full h-[150px] w-[150px] bg-black"></div>
                                     <div className="w-full flex flex-col items-center space-y-4 px-6 ">
                                         <div className=" flex flex-col space-y-2 items-center">
-                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-rukipurple via-rukipurple to-rukiblue text-2xl mt-6">
+                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-b from-rukipurple via-rukipurple to-rukiblue text-2xl mt-6">
                                                 Gabriele Akintunde
                                             </div>
                                             <div className="font-semibold text-neutral-500 text-[12px] ">
@@ -79,7 +79,7 @@ export default function Team() {
                                             </div>
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
-                                            <div className="w-full font-normal text-neutral-700 text-md">
+                                            <div className="w-full font-semibold text-neutral-900 text-md">
                                                 {"Hey, I'm Gabriele, and I helped found RUKI. I am a tenacious individual who delights in trying new things and developing new abilities."}
                                             </div>
 
@@ -108,7 +108,7 @@ export default function Team() {
                                     <div className="rounded-full h-[150px] w-[150px] bg-black"></div>
                                     <div className="w-full flex flex-col items-center space-y-4 px-6">
                                         <div className=" flex flex-col space-y-2 items-center">
-                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-rukipurple via-rukipurple to-rukiblue text-2xl mt-4">
+                                            <div className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-rukipurple via-rukipurple to-rukiblue text-2xl mt-4">
                                                 Vainqueur K. Kayombo
                                             </div>
                                             <div className="font-semibold text-neutral-500 text-[12px] ">
@@ -116,7 +116,7 @@ export default function Team() {
                                             </div>
                                         </div>
                                         <div className=" flex flex-col space-y-2 mt-[250px]">
-                                            <div className="w-full font-normal text-neutral-700 text-md">
+                                            <div className="w-full font-semibold text-neutral-900 text-md">
                                                 {"I'm a vainqueur, one of RUKI's founders, and a deeply passionate person. Additionally, I've delivered pixel-perfect software experiences in fast-paced industries."}
                                             </div>
 
