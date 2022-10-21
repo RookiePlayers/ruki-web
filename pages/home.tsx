@@ -55,20 +55,20 @@ export default function Home() {
           </section>
 
           <section className='w-screen bg-white/[1]'>
-            <div className='w-full flex justify-center relative h-[350px]'>
+            <div className='w-full flex justify-center relative h-[450px]'>
 
               <div className='absolute bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[14]' />
 
               <div className='w-full h-full flex justify-center'>
-                <div className='w-[500px] h-[300px] bg-gradient-to-tr from-rukipurple to-rukiblue rounded-full mr-[10%]' />
-                <div className='w-[300px] h-[200px] bg-gradient-to-tr from-rukipurple to-rukipurple rounded-full' />
+                <div className='w-[500px] h-[400px] bg-gradient-to-tr from-rukipurple to-rukiblue rounded-full mr-[10%]' />
+                <div className='w-[300px] h-[300px] bg-gradient-to-tr from-rukipurple to-rukipurple rounded-full' />
               </div>
-              <div className='absolute w-full flex flex-col max-w-7xl overflow-hidden py-[40px] z-[15] space-y-10'>
+              <div className='absolute w-full flex flex-col max-w-7xl overflow-hidden py-[80px] z-[15] space-y-10'>
                 <div className='font-extrabold text-black text-4xl w-full flex justify-center mix-blend-difference mb-10'>
                   Tools & Technologies
                 </div>
 
-                <div className='w-full flex flex-row space-x-4 justify-center'>
+                <div className='w-full grid grid-cols-8 gap-2 justify-center'>
                   <div className='w-[100px] h-[100px] bg-black rounded-md shadow-md p-6'>
                     <FaUnity className='w-full h-full text-white' />
                   </div>
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='w-full h-[40vh] flex flex-row max-w-7xl my-[5%]'>
+          <section className='w-full h-[60vh] flex flex-row max-w-7xl my-[5%]'>
             <div className='w-[50%] h-full flex flex-row items-center justify-center'>
               <div className='w-[200px] mr-[80px]'>
                 <img src="/assets/images/logov2_white.png" alt="..." className='z-[15] object-cover' />
@@ -115,7 +115,7 @@ export default function Home() {
 
             </div>
             <div className='w-[50%] h-full relative flex items-center justify-center'>
-              <div className='font-semibold text-neutral-200 text-xl mt-[5%] w-[80%]'>
+              <div className='font-normal text-neutral-200 text-xl mt-[5%] w-[80%]'>
                 At Ruki, we prioritize both innovation and user experience. Ruki is primarily a development company, offering slick, high-fidelity websites and applications, imaginative and immersive games, and stunning contemporary visuals.
               </div>
             </div>
