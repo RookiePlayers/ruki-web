@@ -1,10 +1,10 @@
 import {motion} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Column } from "ruki-react-layouts";
-import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
+import { useMediaQuery } from "../responsive_row/useMediaQuery";
 import { SiteData } from "../../types";
-import PerspectiveWrapper from "../../components/perspective_box";
-import { GlowingBorder } from "../../components/glowing_border";
+import PerspectiveWrapper from "../perspective_box";
+import { GlowingBorder } from "../glowing_border";
 import { FaLinkedin } from "react-icons/fa";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";
 import { exit } from "process";

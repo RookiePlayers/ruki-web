@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import styles from "../../index.module.css"
 import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import SectionA from "./sectionA";
+import SectionA from "../../components/about/sectionA";
 import { SiteDataService } from "../../config/services/sitedata";
 import { SiteData } from "../../types";
 import Footer from "../../components/footer";

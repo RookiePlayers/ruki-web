@@ -29,10 +29,10 @@ import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
 import { Chip, Typography } from "@mui/material";
 import { GlowingBorder } from "../../components/glowing_border";
 import PerspectiveWrapper from "../../components/perspective_box";
-import  SectionA  from "./sectionA";
-import SectionB from "./sectionB";
-import SectionC from "./SectionC";
-import SectionD from "./SectionD";
+import  SectionA  from "../../components/home/sectionA";
+import SectionB from "../../components/home/sectionB";
+import SectionC from "../../components/home/SectionC";
+import SectionD from "../../components/home/SectionD";
 const url = (name: string, wrap = false) =>
   `${
     wrap ? "url(" : ""

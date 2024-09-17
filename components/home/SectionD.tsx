@@ -1,10 +1,10 @@
 import { useInView } from "react-intersection-observer";
 import { SiteData } from "../../types";
 import { motion } from "framer-motion";
-import { GlowingBorder } from "../../components/glowing_border";
+import { GlowingBorder } from "../glowing_border";
 import { Alignment, Column, Row } from "ruki-react-layouts";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";
-import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
+import { useMediaQuery } from "../responsive_row/useMediaQuery";
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';

@@ -1,8 +1,8 @@
 import { ParallaxLayer } from "@react-spring/parallax";
-import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
+import { useMediaQuery } from "../responsive_row/useMediaQuery";
 import { SiteData } from "../../types";
 import {motion} from "framer-motion";
-import { CTAButton } from "../../components/cta_button";
+import { CTAButton } from "../cta_button";
 import styles from "../../index.module.css"
 import laptopSiteMock from "../../assets/laptop_site_mock_white.png";
 import siteMock2 from "../../assets/site_mock2.png";
@@ -11,8 +11,8 @@ import mob_main_vid from "../../assets/mob_main_vid.gif";
 import mob_1 from "../../assets/mob_1.png";
 import mob_2 from "../../assets/mob_2.png";
 import mob_3 from "../../assets/mob_3.png";
-import PerspectiveWrapper from "../../components/perspective_box";
-import { GlowingBorder } from "../../components/glowing_border";
+import PerspectiveWrapper from "../perspective_box";
+import { GlowingBorder } from "../glowing_border";
 import { Alignment, Column, Row } from "ruki-react-layouts";
 import { IoIosBulb } from "react-icons/io";
 import { Chip, Typography } from "@mui/material";

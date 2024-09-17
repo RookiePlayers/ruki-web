@@ -1,10 +1,10 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import { GlobalStylesData } from "../../globalStyles";
-import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
+import { useMediaQuery } from "../responsive_row/useMediaQuery";
 import { SiteData } from "../../types";
-import { ThemedLogo } from "../../components/logo";
+import { ThemedLogo } from "../logo";
 import {motion} from "framer-motion";
-import { CTAButton } from "../../components/cta_button";
+import { CTAButton } from "../cta_button";
 const url = (name: string, wrap = false) =>
   `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
