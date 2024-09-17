@@ -4,10 +4,6 @@ import { motion } from "framer-motion";
 import { GlowingBorder } from "../../components/glowing_border";
 import { Alignment, Column, Row } from "ruki-react-layouts";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";
-import { FaReact } from "react-icons/fa";
-import RotatingCircle from "../../components/rotating_circle";
-import { Icon } from "@mui/material";
-import InfiniteCarousel, { Slide } from "../../components/brand_carousel";
 import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
 
 import AliceCarousel from 'react-alice-carousel';
