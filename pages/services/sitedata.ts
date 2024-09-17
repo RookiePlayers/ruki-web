@@ -6,7 +6,7 @@ export const SiteDataService = () => {
     const getSiteData = async ({ onComplete }:{onComplete?: (siteData: SiteData)=>void} = {}) : Promise<SiteData> => {
         try {
             if(onComplete){
-                return onValue(ref(firebaseDatabase, 'siteData'), (snapshot) => {
+                 onValue(ref(firebaseDatabase, 'siteData'), (snapshot) => {
                     const data = snapshot.val() as SiteData;
                     onComplete(data);
                 }, (e)=>{
@@ -17,7 +17,7 @@ export const SiteDataService = () => {
             return result.val() as SiteData;
         }catch(e){
             console.log(e)
-            return {name: "Ruki"}
+            return {name: "Ruki", team: []} as unknown as SiteData;
         }
     }
 

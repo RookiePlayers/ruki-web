@@ -103,7 +103,7 @@ const SectionA = forwardRef<SectionARef, SeactionAProps >(({defaultValue}, ref) 
                                 <PhoneNumberInput value={details.phone} onChange={(v)=>{
                             setDetails({
                                 ...details,
-                                phone: v?.toWellFormed() ?? ""
+                                phone: v?.toString() ?? ""
                             });
                         }} defaultCountry="IE" inputComponent={PhoneInput} fullWidth/>
                             </Grid>
