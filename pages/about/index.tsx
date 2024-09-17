@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {motion} from "framer-motion";
 import Navbar from "../../components/navbar";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";

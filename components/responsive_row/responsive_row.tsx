@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useEffect, useState } from 'react';
 import { BreakPoints, useMediaQuery } from './useMediaQuery';
 import { Alignment, Column, Row } from 'ruki-react-layouts';

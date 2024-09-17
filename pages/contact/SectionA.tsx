@@ -31,6 +31,8 @@ const PhoneInput = forwardRef((props, ref) => {
       />
       );
     });
+
+    PhoneInput.displayName = 'PhoneInput';
 const SectionA = forwardRef<SectionARef, SeactionAProps >(({defaultValue}, ref) => {
         const {ref: ViewRef, inView} = useInView({
             triggerOnce: false,
@@ -137,4 +139,6 @@ const SectionA = forwardRef<SectionARef, SeactionAProps >(({defaultValue}, ref) 
     
 
 });
+
+SectionA.displayName = 'SectionA';
 export default SectionA;

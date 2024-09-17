@@ -4,6 +4,7 @@ import SmallWhiteLogo from '../public/assets/images/logov2_white.png'
 import SmallBlackLogo from '../public/assets/images/logoV2.png'
 import { useThemeChanger } from '../providers/ThemeChangerProvider'
 import { CSSProperties } from 'react'
+import {motion} from 'framer-motion'
 
 export const ThemedLogo = ({ isFullLogo, logoStyle }: { isFullLogo: boolean; logoStyle?: CSSProperties }) => {
     const { currentTheme } = useThemeChanger();
@@ -15,17 +16,22 @@ export const ThemedLogo = ({ isFullLogo, logoStyle }: { isFullLogo: boolean; log
 }
 
 export const LightLogoFull = ({ logoStyle = {} }: { logoStyle?: CSSProperties }) => {
-    return <img src={FullWhiteLogo.src} alt="Ruki Logo" style={{ height: 50, objectFit: 'contain', ...logoStyle }} />
+    return <motion.img src={FullWhiteLogo.src} width={50}
+    height={50} alt="Ruki Logo" style={{objectFit: 'contain', width: 50, height: "auto", ...logoStyle, }} />
 }
 
 export const DarkLogoFull = ({ logoStyle = {} }: { logoStyle?: CSSProperties }) => {
-    return <img src={FullBlackLogo.src} alt="Ruki Logo" style={{ height: 50, objectFit: 'contain', ...logoStyle }} />
+    return <motion.img src={FullBlackLogo.src} alt="Ruki Logo" width={50}
+    height={50} style={{ objectFit: 'contain',width: 50, height: "auto", ...logoStyle }} />
 }
 
 export const LightLogoSmall = ({ logoStyle = {}}: { logoStyle?: CSSProperties }) => {
-    return <img src={SmallWhiteLogo.src} alt="Ruki Logo" style={{ height: 50, objectFit: 'contain', ...logoStyle }} />
+    return <motion.img src={SmallWhiteLogo.src} alt="Ruki Logo" width={50}
+    height={50} style={{ objectFit: 'contain',width: 50, height: "auto", ...logoStyle }} />
 }
 
 export const DarkLogoSmall = ({ logoStyle = {}}: { logoStyle?: CSSProperties }) => {
-    return <img src={SmallBlackLogo.src} alt="Ruki Logo" style={{ height: 50, objectFit: 'contain', ...logoStyle }} />
+    return <motion.img src={SmallBlackLogo.src} alt="Ruki Logo"  
+    width={50}
+    height={50} style={{ objectFit: 'contain',width: 50, height: "auto", ...logoStyle }} />
 }

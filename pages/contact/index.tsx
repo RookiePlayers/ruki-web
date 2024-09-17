@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import Navbar, { NavBarHeight } from "../../components/navbar";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";
@@ -82,7 +83,6 @@ const ContactPage = () => {
     ]
     useEffect(() => {
         updateTheme("light");
-
     }, [])
     const handleNext = () => {
         setSectionValues({

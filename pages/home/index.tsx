@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Link from "next/link";
 import React, { useRef } from "react";
 import Navbar, { NavBarHeight } from "../../components/navbar";

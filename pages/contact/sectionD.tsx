@@ -168,5 +168,5 @@ const SectionD = forwardRef<SectionDRef, SectionDProps>(({defaultValue}, ref) =>
         </LocalizationProvider>
     
 })
-
+SectionD.displayName = "SectionD";
 export default SectionD;

@@ -89,7 +89,7 @@ const CaptionB = ({siteData}: {siteData: SiteData}) => {
                                 <div className='absolute bg-white/75 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[4]' />
                                 <div className="w-full h-full flex flex-col items-center absolute z-[5] py-4">
                                 <div className="rounded-full h-[150px] w-[150px] bg-white overflow-hidden shadow-inner border-gray-500">
-                                        <img src={member.img} alt="..." className=" object-cover" />
+                                        <motion.img src={member.img} alt="..." className=" object-cover" />
                                     </div>  <div className="w-full flex flex-col items-center space-y-4 px-6 ">
                                         <div className=" flex flex-col space-y-2 items-center">
                                             <div className="font-bold text-transparent bg-clip-text bg-gradient-to-b from-rukipurple via-rukipurple to-rukiblue text-2xl mt-6">

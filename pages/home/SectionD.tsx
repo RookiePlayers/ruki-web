@@ -8,6 +8,7 @@ import { useMediaQuery } from "../../components/responsive_row/useMediaQuery";
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+
 const SectionD = () => {
     return <></>
 }
@@ -216,7 +217,7 @@ const CaptionB = ({siteData}: {siteData?: SiteData}) => {
                             {
                                 toolData.map((tool, index) => {
                                     return <div key={`${tool.name}_${index}`} className="flex items-center justify-center">
-                                        <img src={tool.icon} alt={tool.name} className="object-contain" style={{height: 60, width: 80}}/>
+                                        <motion.img src={tool.icon} alt={tool.name} className="object-contain" style={{height: 60, width: 80}}/>
                                     </div>
                                 })
                             }

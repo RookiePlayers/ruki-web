@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
 import { FaRocket, FaLinkedin, FaGithub } from "react-icons/fa";

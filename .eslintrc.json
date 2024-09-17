@@ -1,8 +1,8 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["next", "react"],
+  "plugins": ["import", "react"],
   "rules": {
     "next/no-css-tags": "off",
-    "eslint-plugin-import/no-unused-modules": "warn"
+    "import/no-unused-modules": "warn"
   }
 }

@@ -83,8 +83,10 @@ const SectionB = ({siteData}: {siteData?: SiteData}) => {
             transition={{ duration: 0.5 }} style={{
             width: 250, height: 190, borderRadius: 12, border: '1px solid #fff', overflow: 'hidden', marginRight: 20
           }}>
-          <img
+          <motion.img alt="site mock"
             src={siteMock2.src}
+            width={"100%"}
+            height={"100%"}
             style={{  objectFit: 'cover', width: '100%', height: '100%',borderRadius: 12, transform: "scale(1.2)"}}
           />
           </motion.div>
@@ -94,8 +96,10 @@ const SectionB = ({siteData}: {siteData?: SiteData}) => {
             transition={{ duration: 0.5 }} style={{
             width: 250, height: 190, borderRadius: 12, border: '1px solid #fff', overflow: 'hidden' 
           }}>
-          <img
+          <motion.img alt="site mock 3"
             src={siteMock3.src}
+            width={"100%"}
+            height={"100%"}
             style={{  objectFit: 'cover', width: '100%', height: '100%',borderRadius: 12,transform: "scale(1.2)"}}
           />
           </motion.div>
@@ -128,7 +132,7 @@ const SectionB = ({siteData}: {siteData?: SiteData}) => {
               <Typography>At Ruki we create imersive websites that make the best use of the latest technologies. Our developers and designers curate the best user experience for your customers. </Typography>
               <Row alignment={Alignment.spaceAround} style={{width:"65%", flexWrap: "wrap", marginTop: 10}}>
               {["React", "NextJs", "Flutter", "Angular", "Vue"].map((tech) => {
-                return <Chip label={tech} style={{margin: "5px 0"}}/>
+                return <Chip key={tech} label={tech} style={{margin: "5px 0"}}/>
               })}
               </Row>
               </Column>
@@ -206,8 +210,10 @@ const CaptionC = ({siteData}: {siteData?: SiteData}) => {
             transition={{ duration: 0.5 }} style={{
             width: !isMobile ?  250 : 180, height: !isMobile ? 190 : 140, borderRadius: 12, border: '1px solid #fff', overflow: 'hidden', marginRight: 20
           }}>
-          <img
+          <motion.img alt="site mock"
             src={siteMock2.src}
+            width={"100%"}
+            height={"100%"}
             style={{  objectFit: 'cover', width: '100%', height: '100%',borderRadius: 12, transform :"scale(1.2)"}}
           />
           </motion.div>
@@ -217,9 +223,11 @@ const CaptionC = ({siteData}: {siteData?: SiteData}) => {
             transition={{ duration: 0.5 }} style={{
             width: !isMobile ? 250 : 180, height: !isMobile ? 190 : 140, borderRadius: 12, border: '1px solid #fff', overflow: 'hidden' 
           }}>
-          <img
+          <motion.img alt="site mock 3"
             src={siteMock3.src}
-            style={{  objectFit: 'cover', width: '100%', height: '100%',borderRadius: 12,transform: "scale(1.2)"}}
+            width={"100%"}
+            height={"100%"}
+            style={{  objectFit: 'cover', borderRadius: 12,transform: "scale(1.2)"}}
           />
           </motion.div>
           </Row>
@@ -289,7 +297,7 @@ const CaptionE = ({siteData}: {siteData?: SiteData}) => {
         transition={{ duration: 0.4 }}
         style={{ width: isMobile ? 180 : 400 }}
       >
-        <img  ref={ref} src={mob_main_vid.src} style={{ width: '100%', height: 'auto' }} />
+        <motion.img alt="main vid" ref={ref} src={mob_main_vid.src} style={{ width: '100%', height: 'auto' }} />
       </motion.div>
     </motion.div>
   );
@@ -350,7 +358,7 @@ const CaptionF = ({siteData, showBackground}: {siteData?: SiteData, showBackgrou
       x: isMobile ? 10 : -80,
       y: isMobile ? 0 : 10,
     }} src={mob_1.src} style={{width: isMobile ? 180 : 400, height: "auto",}}/>
-   { isMobile && <img src={mob_2.src} style={{width: isMobile ? 180 : 400, height: "auto", marginRight: 10}}/>}
+   { isMobile && <motion.img alt="mobile image" src={mob_2.src} width={ isMobile ? 180 : 400}  height = {"auto"} style={{ marginRight: 10}}/>}
     </Row>
     </Row>
     </motion.div>

@@ -99,4 +99,5 @@ const SectionC = forwardRef<SectionCRef, SectionCProps>(({defaultValue}, ref) =>
     
 })
 
+SectionC.displayName = "SectionC";
 export default SectionC;
