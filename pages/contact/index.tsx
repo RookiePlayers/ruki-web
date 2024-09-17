@@ -13,7 +13,7 @@ import SectionB, { SectionBRef, UserProjectInfo } from "./sectionB";
 import SectionC, { SectionCRef, UserReferal } from "./sectionC";
 import SectionD, { SectionDRef, UserAvailability } from "./sectionD";
 import { RiCalendar2Fill, RiCheckDoubleFill, RiClipboardFill, RiPriceTag2Fill, RiUser2Fill } from "react-icons/ri";
-import { EmailService } from "../services/email-service";
+import { EmailService } from "../../config/services/email-service";
 import { useSnackbar } from "notistack";
 
 const ContactPage = () => {

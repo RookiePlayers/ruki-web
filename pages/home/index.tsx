@@ -12,7 +12,7 @@ import Head from "next/head";
 import { ResponsiveRow } from "../../components/responsive_row/responsive_row";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import { useThemeChanger } from "../../providers/ThemeChangerProvider";
-import { SiteDataService } from "../services/sitedata";
+import { SiteDataService } from "../../config/services/sitedata";
 import { SiteData } from "../../types";
 import { ThemedLogo } from "../../components/logo";
 import { Alignment, Column, Row } from "ruki-react-layouts";

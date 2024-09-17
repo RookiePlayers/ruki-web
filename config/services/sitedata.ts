@@ -1,4 +1,4 @@
-import { firebaseDatabase } from "../../config/firebase";
+import { firebaseDatabase } from "../firebase";
 import { SiteData } from "../../types"
 import  {child, get, onValue, ref}  from "firebase/database"
 

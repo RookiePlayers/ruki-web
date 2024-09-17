@@ -32,7 +32,7 @@ import {
   IoIosCloseCircleOutline,
   IoMdArrowRoundForward,
 } from "react-icons/io";
-import { SiteDataService } from "../pages/services/sitedata";
+import { SiteDataService } from "../config/services/sitedata";
 import { SiteData } from "../types";
 import { CTAButton } from "./cta_button";
 import { useRouter } from "next/router";
