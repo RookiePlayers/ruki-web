@@ -1,31 +1,72 @@
+import { motion } from 'framer-motion';
+import { Alignment, Column, Row } from 'ruki-react-layouts';
+import { ThemedLogo } from './logo';
+import { useThemeChanger } from '../providers/ThemeChangerProvider';
+import { useInView } from 'react-intersection-observer';
+import { SiFacebook, SiInstagram, SiLinkedin, SiTiktok, SiX } from 'react-icons/si';
+import { Icon } from '@mui/material';
+import { useMediaQuery } from './responsive_row/useMediaQuery';
 export default function Footer() {
+    const { ref, inView } = useInView({ triggerOnce: true });
+    const {isMobile} = useMediaQuery();
+    const { themeData } = useThemeChanger();
     return (
-        <div className="w-full h-[25vh] bg-white relative overflow-hidden mt-[5%]">
-            <div className='h-[1px] bg-neutral-700 w-full' />
-            <div className='absolute bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-2xl w-full h-full z-[4]' />
+        <motion.div ref={ref} className={"h-[100%] p-10"} style={{
+            background: themeData.colors.background.default,
+            width: "100%"
+        }}>
+            <Column style={{ height: "100%", maxWidth: themeData.breakpoints.desktop }} alignment={
+                isMobile ? Alignment.center : Alignment.bottom
+            } crossAlignment={
+                isMobile ? Alignment.center : Alignment.right 
+            }>
 
-            <div className='absolute w-full h-full flex justify-center z-[3]'>
-                <div className='w-[500px] h-[300px] bg-gradient-to-tr from-rukipurple to-rukiblue rounded-full mr-[30%] rotate-90' />
-                <div className='w-[300px] h-[200px] bg-gradient-to-tr from-rukipurple to-rukipurple rounded-full rotate-90' />
-            </div>
+                <motion.div initial={{ y: 0, opacity: 0 }} transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    type: "tween"
+                }} animate={inView ? { y: 10, opacity: 1 } : {}}>
+                    <Row crossAlignment={Alignment.center}>
+                        <ThemedLogo logoStyle={{ height: 30 }} isFullLogo />
+                        <div style={{ width: 1, height: 30, margin: "0 10px", background: `radial-gradient(${themeData.colors.text.primary} 10%, transparent 70%)` }} />
+                        <motion.div onClick={()=>{
+                            window.open("https://www.instagram.com/rukistudios", "_blank")
+                        }} whileHover={{
+                            opacity: 1, 
+                            cursor: "pointer"
+                        }} style={{ color: themeData.colors.text.primary, fontSize: 10, opacity: 0.6, marginRight: 10 }}><Icon fontSize='small'>
+                                <SiInstagram />
+                            </Icon></motion.div>
+                        <motion.div onClick={()=>{
+                            window.open("https://x.com/RukiStudios", "_blank")
+                        }} whileHover={{
+                            opacity: 1, 
+                            cursor: "pointer"
+                        }} style={{ color: themeData.colors.text.primary, fontSize: 10, opacity: 0.6, marginRight: 10  }}><Icon fontSize='small'>
+                                <SiX />
+                            </Icon></motion.div>
+                        <motion.div onClick={()=>{
+                            window.open("https://instagram.com/ruki.design", "_blank")
+                        }} whileHover={{
+                            opacity: 1, 
+                            cursor: "pointer"
+                        }} style={{ color: themeData.colors.text.primary, fontSize: 10, opacity: 0.6 }}><Icon fontSize='small'>
+                                <SiLinkedin />
+                            </Icon></motion.div>
+                    </Row>
+                </motion.div >
+                <motion.div className="text-sm" initial={{ y: -10, opacity: 0 }} transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    type: "tween"
+                }} animate={inView ? { y: 0, opacity: 0.8 } : {}} style={{
+                    color: themeData.colors.text.secondary,
+                    opacity: 0.7,
+                    marginTop: 12,
+                    marginBottom: 10
+                }}>© {new Date().getFullYear()} Ruki. All rights reserved.</motion.div>
 
-            <div className="w-full flex justify-center items-center h-[25vh]">
-                <div className="absolute flex flex-row max-w-7xl h-[90%] z-[5]">
-                    {/* <div className='font-semibold text-neutral-800 text-xl'>
-                        At Ruki, we prioritize both innovation and user experience. Ruki is primarily a development company, offering slick, high-fidelity websites and applications, imaginative and immersive games, and stunning contemporary visuals.
-                    </div> */}
-                    <div className="w-[50vw] h-full flex justify-center items-center">
-                        <div className="mt-auto rounded-lg flex mr-auto">
-                            <div className='w-[80px] '>
-                                <img src="/assets/images/logoV2_full.png" alt="..." className='z-[15] object-cover' />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-[50vw] h-full flex justify-end items-center">
-
-                        <div className="text-black font-bold mt-auto mb-[11.5px]">© 2022 RUKI, Always Growing ©</div>
-                    </div>
-                </div>
-            </div>
-        </div>)
+            </Column>
+        </motion.div>
+    )
 }

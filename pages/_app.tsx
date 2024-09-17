@@ -2,6 +2,7 @@ import { ThemeProvider } from '@mui/material'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import ThemeChangerProvider, { useThemeChanger } from '../providers/ThemeChangerProvider'
+import { SnackbarProvider } from 'notistack'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -16,7 +17,9 @@ const RukiSite = ({ Component, pageProps }: any) => {
   } = useThemeChanger();
 
   return <ThemeProvider theme = {currentTheme} >
+    <SnackbarProvider maxSnack={3}>
       <Component {...pageProps} />
+      </SnackbarProvider>
 
   </ThemeProvider>
 }

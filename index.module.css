@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.background {
+  background: linear-gradient(#010409, #030b18);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.contact-background {
+  background-position: 60% 20%
+}
+.scrollText {
+  font-size: 1.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  height: 10rem;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.parallax {
+  margin-right: 15%;
+}
+
+.sticky {
+  margin-left: 15%;
+  background-color: #ff6d6d;
+}
+
+.blue {
+  background-color: #5b65ad;
+  color: white;
+}
+
+.purple {
+  border-width: 14px;
+  border-style: solid;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  //animation: borderRotate var(--d) linear infinite forwards;
+ border-image-slice: 20;
+ border-image-source: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" \width="1000" height="1000"> \<linearGradient id="g" \gradientUnits="userSpaceOnUse"> \<stop stop-color="%23F0F7" /> \<stop offset=".5">\<animate attributeName="stop-color" \values="%230FF7;%23FF07;%230FF7" \dur="6s" repeatCount="indefinite" /> \</stop> \<stop stop-color="%230F07" offset="1" /> \<animate attributeName="x1" \dur="4s" repeatCount="indefinite" \values="0;1000;1000;0;0"/> \<animate attributeName="y1" \dur="4s" repeatCount="indefinite" \values="0;0;1000;1000;0"/> \<animate attributeName="x2" \dur="4s" repeatCount="indefinite" \values="1000;0;0;1000;1000"/> \<animate attributeName="y2" \dur="4s" repeatCount="indefinite" \values="1000;1000;0;0;1000"/> \</linearGradient> \<rect fill="none" stroke="url(%23g)" \stroke-width="20" x="10" y="10" \rx="30" width="980" height="980" /> \</svg>');
+  border-radius: 10px;
+  background: linear-gradient(-5deg, #31cbc9 -10%, #6a00f4  80%);
+}
+/* .purple:nth-child(2) {
+  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  animation: borderRadial var(--d) linear infinite forwards;
+} */
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 40%;
+  }
+
+  .parallax {
+    margin-right: 1.5rem;
+  }
+
+  .sticky {
+    margin-left: 1.5rem;
+  }
+}
+
+.glowing-box {
+  position: relative;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 15px rgba(255, 64, 129, 0.5); /* Default box shadow */
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+  overflow: hidden; /* Clips the content to avoid overflow issues */
+  background-size: cover;
+  background-position: center;
+}
+
+.glowing-box:hover {
+  box-shadow: 0 0 25px rgba(255, 64, 129, 0.7); /* Enhanced box shadow on hover */
+}

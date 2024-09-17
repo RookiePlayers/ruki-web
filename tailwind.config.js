@@ -11,7 +11,11 @@ module.exports = {
         rukiblue: "#31cbc9",
       },
       screens: {
-        xs: "480px",
+        xs: "380px",
+        sm: "768px",
+        md: "1024px",
+        lg: "1280px",
+        xl: "1440px",
       }
     },
   },
