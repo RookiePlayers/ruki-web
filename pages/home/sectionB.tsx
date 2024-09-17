@@ -255,7 +255,7 @@ const CaptionD = ({siteData}: {siteData?: SiteData}) => {
         <Typography className="mb-1">At Ruki we create imersive websites that make the best use of the latest technologies. Our developers and designers curate the best user experience for your customers. </Typography>
         <Row alignment={Alignment.left} style={{  flexWrap: "wrap", marginTop: 10}}>
         {["React", "NextJs", "Flutter", "Angular", "Vue"].map((tech) => {
-          return <Chip label={tech} style={{margin: "5px"}}/>
+          return <Chip key={tech} label={tech} style={{margin: "5px"}}/>
         })}
         </Row>
         </Column>
@@ -386,10 +386,12 @@ const CaptionG = ({siteData}: {siteData?: SiteData}) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}>
         <Column crossAlignment={Alignment.center} alignment={Alignment.center}>
-        <Typography className="mb-1">At Ruki we create imersive websites that make the best use of the latest technologies. Our developers and designers curate the best user experience for your customers. </Typography>
+        <Typography className="mb-1">
+          Our Mobile Applications are designed to be user friendly and intuitive. We use the latest technologies to create applications that are fast and responsive.
+        </Typography>
         <Row alignment={Alignment.left} style={{  flexWrap: "wrap", marginTop: 10}}>
-        {["React", "NextJs", "Flutter", "Angular", "Vue"].map((tech) => {
-          return <Chip label={tech} style={{margin: "5px"}}/>
+        {["React Native", "Flutter", "Swift", "Vue"].map((tech) => {
+          return <Chip key={tech} label={tech} style={{margin: "5px"}}/>
         })}
         </Row>
         </Column>

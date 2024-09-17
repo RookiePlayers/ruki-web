@@ -188,7 +188,7 @@ const CaptionB = ({siteData}: {siteData?: SiteData}) => {
             {
                 Object.keys(tools).map((tool, index) => {
                     const toolData = tools[tool as keyof typeof tools];
-                    return <div style={{position: "relative", width: "100%", marginBottom: 80,}}>
+                    return <div key={tool} style={{position: "relative", width: "100%", marginBottom: 80,}}>
                     <Row style={{
                         position: "absolute",
                         zIndex: 1,

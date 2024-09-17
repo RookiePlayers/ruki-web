@@ -324,7 +324,7 @@ const BuildDrawer = ({
           >
             <List style={{ padding: "50px 20px" }}>
               {NavData.sort((a, b) => a.index - b.index).map((item, index) => (
-                <motion.div variants={listItemVariants}>
+                <motion.div key={index} variants={listItemVariants}>
                   <Row
                     alignment={Alignment.center}
                     crossAlignment={Alignment.center}
